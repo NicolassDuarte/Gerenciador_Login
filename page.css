@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  font-family: "Anton", sans-serif;
+  font-weight: 4000;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #514869;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+header nav a {
+  color: #00ff88;
+  font-weight: 600;
+  padding: 32px;
+  text-decoration: none;
+}
+
+.pageCenter {
+  width: 100vw;
+  height: 100vh;
+  background-color: #201b2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-page {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-page {
+  width: 50vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #00e3cc, #00ff88, #009688, #44e3d3);
+  background-size: 400% 100%;
+  animation: degrade 10s linear infinite alternate;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+
+  100% {
+    background-position: 400%;
+  }
+}
+
+#copyright {
+  background-color: #263138;
+  padding: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#copyright a {
+  color: #00ff88;
+}
